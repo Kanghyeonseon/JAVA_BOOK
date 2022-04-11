@@ -1,0 +1,25 @@
+package Ch03;
+
+public class C02TypeChange {
+
+	public static void main(String[] args) {
+		//강제형변환
+		
+
+		
+		int ival = 44032;
+		char cval = (char) ival;
+		System.out.println(cval);
+		
+		long lval = 500;
+		ival = (int) lval;
+		System.out.println(lval);
+		
+		double dval = 3.14;
+		ival = (int) dval;
+		System.out.println(ival);
+
+		
+	}
+
+}

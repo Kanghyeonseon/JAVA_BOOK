@@ -1,4 +1,4 @@
-package Ch03실수;
+package Ch03;
 
 public class C01TypeChange {
 
