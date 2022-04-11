@@ -1,15 +1,15 @@
-package Ch03½Ç¼ö;
+package Ch03ì‹¤ìˆ˜;
 
-public class C03ÀÚ·áÇü {
+public class C03ìë£Œí˜• {
 
 	public static void main(String[] args) {
 		
-		int num1; 				//4byte Á¤¼ö ÀúÀå°ø°£À» ÁöÁ¤ÇÑ µÚ num1À¸·Î ÀÌ¸§À» ºÎ¿©(º¯¼ö¸¦ Á¤ÀÇ)
-								//¼±¾ğ°ú Á¤ÀÇ´Â Â÷ÀÌ°¡ ÀÖ´Ù.
-		num1 = 10;			    //10ÀÌ¶ó´Â µ¥ÀÌÅÍ°¡ »ó¼öÇ®¿¡ ÀúÀåµÈ ÈÄ num1 º¯¼ö¿¡ º¹»çµÈ´Ù.
-		int num2 = 4;			//4¶ó´Â ÀÌÅÍ¸¦ »ó¼öÇ®¿¡ ÀúÀåÇÑ ÈÄ 4byteÁ¤¼ö num2 °ø°£¿¡ ÃÊ±âÈ­
-		int num3 = num1 + num2; //num1°ú num2ÀÇ ÇÕÀ» num3º¯¼ö°ø°£¿¡ ÃÊ±âÈ­ÇÑ´Ù.
-		System.out.println(num3);//ÇÔ¼ö ³»ºÎ¿¡¼­ º¯¼ö°¡ »ç¿ëµÇ¸é '°ª'À¸·ÎÇØ¼®µÈ´Ù.
+		int num1; 				
+							
+		num1 = 10;			   
+		int num2 = 4;	
+		int num3 = num1 + num2; 
+		System.out.println(num3);
 		
 				
 		
