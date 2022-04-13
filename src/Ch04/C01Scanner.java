@@ -1,6 +1,7 @@
 package Ch04;
 
-import java.util.Scanner;
+import java.util.Scanner; //스캐너 클래스의 자료형을 어디서 가져오는지 명시.
+						  //패키지의 경로. 알아서 입력된다.
 
 public class C01Scanner {
 
