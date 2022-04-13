@@ -31,7 +31,8 @@ public class C01Arithmethic {
 //		System.out.println("a != b ? " + (a != b));
 		
 		//논리연산자
-		int a = 10; int b = 20; int c = 15;
+//		int a = 10; int b = 20; int c = 15;
+		
 		//AND연산자(&&)
 //		System.out.println((a>=b)&&(b>=c)); //false && true;
 //		System.out.println((a<=b)&&(b<=c)); //true  && false;
