@@ -29,6 +29,7 @@ public class While7 {
 		}
 		System.out.println("짝수의 합 : " + sum1);
 		System.out.println("홀수의 합 : " + sum2);
+		sc.close();
 
 		
 	}

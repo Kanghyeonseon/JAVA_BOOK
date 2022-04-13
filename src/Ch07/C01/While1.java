@@ -10,9 +10,16 @@ public class While1 {
 		System.out.println("n부터 m까지 수의 합을 구합니다.\nn과 m을 입력하세요.");
 		int n = sc.nextInt();
 		int m = sc.nextInt();
+		int sum = 0;
 		
-		int sum = n;
-		int i=n+1;
+		if(n>m)				//n에 m보다 큰 수가 들어오면?
+		{
+			int tmp = n;
+			n=m;
+			m=tmp;
+		}
+		
+		int i=n;
 		
 		while(i<=m)
 		{

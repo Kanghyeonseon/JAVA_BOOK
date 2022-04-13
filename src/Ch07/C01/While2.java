@@ -9,7 +9,8 @@ public class While2 {
 		while (i<=9)
 		{
 			product = 2*i;
-			System.out.println("2*"+i+"="+product);
+		//	System.out.println("2*"+i+"="+product);
+			System.out.printf("%d x %d = %d\n", 2, i, product);
 			i++;
 		}
 		
