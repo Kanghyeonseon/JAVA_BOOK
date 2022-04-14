@@ -31,7 +31,7 @@ public class Star_Diamond {
 				while(j<=i-(high/2+1)) {System.out.print(" "); j++;}
 						//!!!!!!!!!!!!!!!!
 				k=0;
-				while(k<=(high-1)*2-(2*i)) {System.out.print("*"); k++;}
+				while(k<=(high-1-i)*2) {System.out.print("*"); k++;}
 						//!!!!!!!!!!!!!!!!!
 			}
 			
