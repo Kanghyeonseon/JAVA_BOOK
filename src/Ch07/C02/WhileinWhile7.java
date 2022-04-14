@@ -12,37 +12,62 @@ public class WhileinWhile7 {
 		// *****
 		//  ***
 		//   *
-		int high = 3;
-		int a=1;
-		int b=1;
-		int c=high;
-
-
 		
-		while(j<=c)
+		
+		int high = 3;
+		int i=high;
+		int l =1;
+		int j = 1;
+		
+		
+		while(j<=high)
 		{
-			while(c>=j)
+			i=high;
+			while(i>=j)
 			{
 				System.out.printf(" ");				
-				c--;
-			}	
+				i--;
+			}			
 			l=1;
-			int m=1;
-			while(l<=j)
+			while(l<=2*j-1)
 				{
 					System.out.printf("*");
-
 					l++;
-				}
-			m=1;			
-			while(m<=l) {
-					System.out.print("*");
-					m++;
-			}			
+				}	
+						
 			System.out.println();
 			j++;
 		}
 		
+		
+		
+		System.out.println();
+		
+		int k=1;		
+		while(k<=high+1) {
+			
+			i=2;
+			while(i<=k)
+			{
+				System.out.printf(" ");				
+				i++;
+			}	
+
+			
+			l=high+1;
+			
+			while(l>=2*k-4)
+				{
+					System.out.printf("*");
+					l--;
+				}	
+						
+			System.out.println();
+						
+			
+			
+			k++;
+		}
 		
 		
 		

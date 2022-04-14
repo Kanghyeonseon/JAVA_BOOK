@@ -26,6 +26,7 @@ public class WhileinWHile5 {
 			System.out.println();
 			j++;
 		}		
+		System.out.println();
 		
 		while(j>=1) 
 		{

@@ -35,7 +35,7 @@ public class WhileinWHile6 {
 		
 		int i=high;
 		int l =1;
-		
+//		int m=1;		
 		
 		
 		
@@ -48,18 +48,22 @@ public class WhileinWHile6 {
 				i--;
 			}	
 			l=1;
-			int m=1;
-			while(l<=j)
+
+			while(l<=2*j+1)
 				{
 					System.out.printf("*");
 
 					l++;
 				}
-			m=1;			
-			while(m<=l) {
-					System.out.print("*");
-					m++;
-			}			
+			
+//			m=1;			
+//			while(m<=l) {
+//					System.out.print("*");
+//					m++;
+//			}		
+			
+			
+			
 			System.out.println();
 			j++;
 		}
