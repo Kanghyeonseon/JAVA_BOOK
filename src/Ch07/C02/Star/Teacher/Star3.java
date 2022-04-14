@@ -32,7 +32,8 @@ public class Star3 {
 			{
 				System.out.print(" ");
 				j++;
-			}			
+			}
+			
 			//별찍기
 			k = 0;
 			while(k<=2*i) //별을 짝수개 출력하는 것 같아보이지만 아니다. 0부터니까 홀수개임.

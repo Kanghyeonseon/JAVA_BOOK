@@ -9,7 +9,6 @@ public class WhileInWhile9 {
 		//   *
 		//  ***
 		// *****	
-
 		//*******
 		// *****
 		//  ***
@@ -47,7 +46,7 @@ public class WhileInWhile9 {
 			i++;
 		}
 		
-		System.out.println();
+//		System.out.println();
 		
 		i = 1;
 		while(i<=high+1)
