@@ -5,4 +5,6 @@ public class Cook {
 	Cook() {
 		Trecp = new TeokbokkiRecip();
 	}
+//	TeokbokkiRecip Trecp = new TeokbokkiRecip();
+
 }

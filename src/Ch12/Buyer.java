@@ -9,11 +9,11 @@ public class Buyer {
 	Buyer(int money, int cnt) {
 		this.Mymoney = money; this.Applecnt=cnt;
 	}
-	
+
 	//기능
-	void pay(Seller seller, int money) {
-		Mymoney-=money;
-		int cnt=seller.Recieve(money); //판매자에게 돈을 전달하는 행위.
+	void pay(Seller seller, int b) {
+		Mymoney-=b;
+		int cnt=seller.Recieve(b); //판매자에게 돈을 전달하는 행위.
 									   //return값을 전달.
 		Applecnt+=cnt;
 	}
@@ -26,3 +26,4 @@ public class Buyer {
 	
 	
 }
+

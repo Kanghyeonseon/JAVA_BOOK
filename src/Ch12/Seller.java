@@ -17,9 +17,9 @@ public class Seller {
 	
 	//기능
 	//Recieve 
-	int Recieve(int money) {
-		Mymoney += money;
-		int cnt = money/Price;
+	int Recieve(int eee) {
+		Mymoney += eee;
+		int cnt = eee/Price;
 		Applecnt-=cnt;
 		return cnt;
 	}
