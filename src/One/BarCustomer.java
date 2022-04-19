@@ -3,21 +3,26 @@ package One;
 public class BarCustomer {
 	int Mymoney;
 	String Menu;
-	String menuname;
-	BarCustomer(int mymoney, String menu) {
-		this.Mymoney=mymoney;this.Menu=menu;
+	int menunum;
+	int ea;
+	int Change;
+	int origin;
+	int Total=origin;
+	public BarCustomer(int mymoney, int menunum,int ea, int origin) {
+		this.Mymoney=mymoney;this.menunum=menunum;this.ea=ea;this.origin=origin;
 	}
 	
-
-	 void pay(int mymoney) { 
-		 Mymoney=mymoney;
-
-		 }
+	void pay(Bar bar , int money,int ea) { 
+		 
+		 Mymoney=money*ea;
+//		 Total+=bar.Recieve(origin);
+		 Change=origin-money*ea;
+	 }
 	 
 	 void Showinfo() {
-		 System.out.println("손님이 낼 금액 : " + Mymoney);
-
-	 }
+		 System.out.println("총 금액 : " + Mymoney);
+		 System.out.println("거스름돈 : " + Change);
+	 	}
 	 }
 	
 	
