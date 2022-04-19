@@ -10,9 +10,13 @@ class Circle2 {
 		this.x = x;
 		this.y = y;
 		this.radius = radius; // x, y, radius 초기화
-	}	
+	}
 	public void show() {
 		System.out.println(x + "," + y + "," + radius);
+	}
+	int recieve() {
+		for(int i : Circle2) {
+		}
 	}
 }	
 
@@ -28,17 +32,13 @@ public class P06 {
 			int radius = sc.nextInt(); // radius값 읽기.
 			c[i] = new Circle2(x, y, radius); // Circle 객체 생성
 			}
-	  for(int i=0; i<c.length; i++) 
-	      c[i].show();
-	  int max;
+		for(int i=0; i<c.length; i++)  c[i].show();
+	  
 
-	  for (int i=0;<i<c.length;i++) {
-		  c[i].
-	  }
 		
 			
 		
-			sc.close();
+	sc.close();
 		}
 
 }
