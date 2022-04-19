@@ -8,6 +8,3 @@ public class C04Car {
 	void Break() {System.out.println("감속합니다.");}
 	
 }
-
-
-
