@@ -16,6 +16,7 @@ public class P07 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
+		
 		System.out.println("이번달 스케쥴 관리 프로그램.");
 		System.out.println("할일(입력:1, 보기:2, 끝내기:3)>>");
 		switch (num) {

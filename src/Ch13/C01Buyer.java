@@ -13,6 +13,7 @@ public class C01Buyer {
 		int cnt = seller.Recieve(mymoney);
 		Cokecount+=cnt;
 	}
+	
 	void Showinfo() {
 		System.out.println("남은 돈 = " + Mymoney);
 		System.out.println("총 콜라 개수 = " + Cokecount);
