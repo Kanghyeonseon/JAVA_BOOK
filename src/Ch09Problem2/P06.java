@@ -12,13 +12,13 @@ class Circle2 {
 		this.radius = radius; // x, y, radius 초기화
 	}
 	public void show() {
-		System.out.println(x + "," + y + "," + radius);
+		System.out.printf("%4.2f %4.2f %d",x,y,radius);
+//		System.out.printf(x + "," + y + "," + radius);
 	}
-	int recieve() {
-		for(int i : Circle2) {
-		}
-	}
-}	
+
+
+}
+//가장 면적인 큰 원은 (2.5,2.7)6
 
 public class P06 {
 	public static void main(String[] args) {
@@ -32,9 +32,18 @@ public class P06 {
 			int radius = sc.nextInt(); // radius값 읽기.
 			c[i] = new Circle2(x, y, radius); // Circle 객체 생성
 			}
-		for(int i=0; i<c.length; i++)  c[i].show();
-	  
+		for(int i=0; i<c.length; i++)  c[i].show();		
+		int [] area = new int [3];		
+		for(int i=0; i<c.length; i++) {
+			area[i] = c[i].radius;
+		}
+		int max=area[0];
+		for(int i=0;i<area.length;i++) {
+			if(max<area[i]) max=area[i];
+		}
+		System.out.printf("가장 면적이 큰 원의 반지름은  : %d",max);
 
+		
 		
 			
 		
