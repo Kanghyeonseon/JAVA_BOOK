@@ -3,38 +3,40 @@ package Test;
 import java.util.Scanner;
 
 class Seller {
-	int mymoney; int applecount; int price;
-	Seller(int mymoney, int applecount, int price) {
-		this.mymoney=mymoney;this.applecount=applecount
-				;this.price=price;
+	int mymoney; int cnt; int price;
+	Seller(int mymoney, int cnt, int price) {
+		this.mymoney=mymoney; this.cnt=cnt; this.price=price;
 	}
 	int Recieve(int howmuch) {
 		mymoney+=howmuch;
-		int cnt = howmuch/price;
-		applecount-=cnt;
-		return cnt;
+		int resultcnt = howmuch/price;
+		cnt-=resultcnt;
+		return resultcnt;
 	}
-	void ShowInfo() {
-		System.out.println("보유 금액 : " + mymoney);
-		System.out.println("사과 개수 : " + applecount);
+	void ShowSellerInfo() {
+		System.out.println("보유금액\t사과개수");
+		System.out.printf("%d\t%d",mymoney,cnt);
 	}
-	
 }
 class Buyer {
-	int money; int applecnt;
-	Buyer(int money, int cnt) {
-		this.money=money;applecnt=cnt;
+	int mymoney; int cnt;
+	
+	Buyer(int mymoney, int cnt) {
+		this.mymoney=mymoney; this.cnt=cnt;
 	}
-	void pay(Seller seller,int paymoney) {
-		money-=paymoney;
-		int cnt=seller.Recieve(paymoney);
-		applecnt+=cnt;
+	void pay(Seller RefVar, int paymoney) {
+		mymoney-=paymoney;
+		int resultcnt = RefVar.Recieve(paymoney);
+		cnt+=resultcnt;
 	}
-	void ShowInfo() {
-		System.out.println("보유 금액 : " + money);
-		System.out.println("사과 개수 : " + applecnt);
+	void ShowBuyerInfo() {
+		System.out.println("보유금액\t사과개수");
+		System.out.printf("%d\t%d",mymoney,cnt);
 	}
+
+	
 }
+
 
 
 
@@ -51,12 +53,10 @@ public class AppleMain {
 		홍길동.pay(사과장수1, m);
 
 		System.out.println("---------판매자--------");
-		사과장수1.ShowInfo();
+		사과장수1.ShowSellerInfo();
 		System.out.println();
 		System.out.println("---------구매자--------");
-		홍길동.ShowInfo();
+		홍길동.ShowBuyerInfo();
 	}
 	
-	
 }
-
