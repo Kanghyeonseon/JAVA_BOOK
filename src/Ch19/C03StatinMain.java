@@ -1,14 +1,19 @@
 package Ch19;
 
 class Store {
-	static double sales;
+	//속성
+	static double sales; //sales 메모리 공간 공유
 	String storeName;
 	int colaPrice;
 	int coffeePrice;
+	
+	//생성자
 	Store(String name,int colaprice, int coffeeprice) {
 		this.colaPrice=colaprice; this.coffeePrice=coffeeprice;
 		this.storeName=name;
 	}
+	
+	//기능
 	void ShowInfo() {
 		System.out.println("--------" + storeName + "---------");
 		System.out.println("커피 가격 : " + coffeePrice*(1-sales));
