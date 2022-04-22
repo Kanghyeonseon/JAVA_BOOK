@@ -3,38 +3,35 @@ package Test;
 import java.util.Scanner;
 
 class Seller {
-	int mymoney; int cnt; int price;
-	Seller(int mymoney, int cnt, int price) {
-		this.mymoney=mymoney; this.cnt=cnt; this.price=price;
+	int Mymoney; int AppleCount; int Price;
+	Seller(int Mymoney, int AppleCount, int Price) {
+		this.Mymoney=Mymoney; this.AppleCount=AppleCount; this.Price=Price;
 	}
 	int Recieve(int howmuch) {
-		mymoney+=howmuch;
-		int resultcnt = howmuch/price;
-		cnt-=resultcnt;
-		return resultcnt;
+		Mymoney+=howmuch;		
+		int ResultCount=howmuch/Price;
+		AppleCount=AppleCount-ResultCount;
+		return ResultCount;
 	}
 	void ShowSellerInfo() {
-		System.out.println("보유금액\t사과개수");
-		System.out.printf("%d\t%d",mymoney,cnt);
+		System.out.println("판매자돈주머니\t판매자사과주머니");
+		System.out.printf("%d\t\t%d",Mymoney,AppleCount);
 	}
 }
 class Buyer {
-	int mymoney; int cnt;
-	
-	Buyer(int mymoney, int cnt) {
-		this.mymoney=mymoney; this.cnt=cnt;
+	int Mymoney; int AppleCount;
+	Buyer(int Mymoney, int AppleCount) {
+		this.Mymoney=Mymoney; this.AppleCount=AppleCount;
 	}
-	void pay(Seller RefVar, int paymoney) {
-		mymoney-=paymoney;
-		int resultcnt = RefVar.Recieve(paymoney);
-		cnt+=resultcnt;
+	void Pay(Seller seller, int paymoney) {
+		Mymoney-=paymoney;
+		AppleCount=AppleCount+seller.Recieve(paymoney);
+				
 	}
 	void ShowBuyerInfo() {
-		System.out.println("보유금액\t사과개수");
-		System.out.printf("%d\t%d",mymoney,cnt);
+		System.out.println("구매자돈주머니\t구매자사과주머니");
+		System.out.printf("%d\t\t%d",Mymoney,AppleCount);
 	}
-
-	
 }
 
 
@@ -50,7 +47,7 @@ public class AppleMain {
 		System.out.println("홍길동의 사과가격을 입력하세요.");
 		int m = sc.nextInt();
 		
-		홍길동.pay(사과장수1, m);
+		홍길동.Pay(사과장수1, m);
 
 		System.out.println("---------판매자--------");
 		사과장수1.ShowSellerInfo();
