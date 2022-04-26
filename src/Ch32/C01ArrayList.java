@@ -32,10 +32,20 @@ public class C01ArrayList {
 		}
 		System.out.println("개량 포문---------------------");
 		for(String temp : list) {
+			//list에 있는 데이터를 temp에 잠깐 저장했다가 출력한다.
 			System.out.println(temp);
 		}
 		
+		//삭제1.
+		list.remove(0);
+		//삭제2.
+		list.remove("JSP");
 		
+		//리스트에 문자열을 저장하게 되면 요소를 toString으로 불러올 수 있다.
+		System.out.println(list.toString());
+		
+		//전체삭제
+		list.clear();
 			
 	
 	}
