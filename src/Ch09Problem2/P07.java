@@ -3,41 +3,12 @@ package Ch09Problem2;
 
 import java.util.Scanner;
 
-class Day {
-   private String work; //하루의 할 일을 나타내는 문자열   
-   
-   public Day(String work2) {
-	   this.work2=work;
-   }
-public void set(String work) { this.work = work; }   
-   public String get() { return work; }   
-   public void show() {
-      if(work == null) System.out.println("없습니다.");
-      else System.out.println(work+"입니다.");
-   }
-}
-
 class MonthSchedule{
 	String work;
-	int day;
-	Day list[] = new Day[30];
-	int order=0;
-	
-	MonthSchedule(String work, int day) {
-		this.work=work; this.day=day;
+	MonthSchedule(String Work) {
+		this.work=Work;
 	}
-	
-	void input(Day day) {
-		list[order]=day;
-	}
-	
-	void view() {
-		for(int i=0;i<30;i++) {
-			System.out.printf("%d : %s\n",i+1, list[i]);
-		}
-	}
-//	finish() {}
-//	run() {}
+
 }
 
 public class P07 {
@@ -46,19 +17,29 @@ public class P07 {
 		System.out.println("이번달 스케쥴 관리 프로그램.");
 		System.out.println("할일(입력:1, 보기:2, 끝내기:3) >>");		
 		int choice = sc.nextInt();
-		
+		MonthSchedule [] list = new MonthSchedule [30];
+
+
+
+
 		switch (choice) {
 		case 1 :
 			System.out.printf("날짜(1~30)?");
 			int day=sc.nextInt();
 			System.out.println("할일(빈칸없이입력)?");
-			String work=sc.next();			
-			MonthSchedule april = new MonthSchedule(work,day);
-			april.input(new Day(work));
-			april.view();
+			String W=sc.next();
+			list[day] = new MonthSchedule(W);
+			System.out.println(list[1]);
 			break;
+			
+
 		case 2 :
-		case 3 :		
+			for(int i=0;i<30;i++) {
+				System.out.printf("%d 일 스케줄 : %s\n",i,list[i].work);
+			}
+		case 3 :
+			System.out.println("끝냅니다.");
+			break;
 		}
 		
 		

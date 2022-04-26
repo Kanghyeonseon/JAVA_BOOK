@@ -19,7 +19,7 @@ public class BarMain {
 		}
 		int StartMoney=2000;
 		
-		Bar b1 = new Bar(StartMoney ,menuname);
+		Bar b1 = new Bar(StartMoney ,menuname,totalprice);
 		BarCustomer 강현선 = new BarCustomer(price, menuname);
 		
 		b1.Recieve(price, price, count);		
