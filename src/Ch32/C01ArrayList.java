@@ -45,8 +45,6 @@ public class C01ArrayList {
 		System.out.println(list.toString());
 		
 		//전체삭제
-		list.clear();
-			
-	
+		list.clear();	
 	}
 }
