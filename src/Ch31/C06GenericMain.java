@@ -41,9 +41,9 @@ public class C06GenericMain {
 		print2.setMeterial(new Plastic());
 		print2.getMeterial().doPrinting();		
 		
-		ThreeDPrinter<Water> print3 = new ThreeDPrinter<Water>();
-		print3.setMeterial(new Water());
-		print3.getMeterial().doPrinting();
+//		ThreeDPrinter<Water> print3 = new ThreeDPrinter<Water>();
+//		print3.setMeterial(new Water());
+//		print3.getMeterial().doPrinting();
 		//이건 예외처리가 안 된다. 애초에 실행이 안 되기 때문이다.
 	}
 }
