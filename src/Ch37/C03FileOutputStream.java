@@ -15,9 +15,5 @@ public class C03FileOutputStream {
 			
 		} catch (Exception e) { e.printStackTrace(); }
 		
-		
-		
-		
-		
 	}
 }

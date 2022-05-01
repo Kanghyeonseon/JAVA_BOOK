@@ -47,7 +47,7 @@ class C07GUI extends JFrame {
 		
 		//패널에 area추가
 //		pan1.add(area1); 				//스크롤 추가시 이 부분 제거		
-		pan1.add(scroll1)
+		pan1.add(scroll1);
 		
 		pan1.setLayout(null); 
 		
